@@ -174,7 +174,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add output/news
+          git add output/news output/html/latest
           if git diff --cached --quiet; then
             echo "没有新的热点数据，跳过提交。"
           else
